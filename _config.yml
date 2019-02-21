@@ -1,0 +1,30 @@
+# ----
+# Site
+
+title: Steamulate
+url: "https://steamulate.tk"
+baseurl:
+google_analytics_key: "UA-131355319-1"
+
+logo: /favicon.png
+description: Official site for Steamulate.
+
+# -----
+# Build
+
+timezone: Etc/UTC
+
+permalink: pretty
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-paginate
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+paginate: 10
+paginate_path: "/blog/:num/"
