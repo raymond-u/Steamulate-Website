@@ -29,10 +29,6 @@
     
 	changeNavbar();
 	
-	$('a[href="#carousel-app"]').click( function(event) {
-      		e.preventDefault();
-   	} );
-	
 	$("a[href*=\\#]").on("click", function (event) {
 		if(this.pathname === window.location.pathname) {
 			event.preventDefault();
