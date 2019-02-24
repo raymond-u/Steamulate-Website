@@ -29,10 +29,14 @@
     
 	changeNavbar();
 	
+	$('a[href="#carousel-app"]').click( function(event) {
+      		e.preventDefault();
+   	} );
+	
 	$("a[href*=\\#]").on("click", function (event) {
 		if(this.pathname === window.location.pathname) {
 			event.preventDefault();
-			if (this.hash !== "carousel-app") {
+			if (this.hash !== "#carousel-app") {
 	        		$("html, body").animate({
 			    		scrollTop: $(this.hash).offset().top
 				}, 500);
